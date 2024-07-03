@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--
+         NOTE: If you are looking for the Hibernate database connection info,
+         it is initialized via the beans in
+         [dspace.dir]/config/spring/api/core-hibernate.xml
+        -->
+
+        <property name="hibernate.hbm2ddl.auto">validate</property>
+        <property name="hibernate.hbm2ddl.import_files_sql_extractor">org.hibernate.tool.hbm2ddl.SingleLineSqlCommandExtractor</property>
+        <property name="hibernate.connection.autocommit">false</property>
+        <property name="hibernate.jdbc.batch_size">20</property>
+        <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
+
+        <!--Debug property that can be used to display the sql-->
+        <property name="show_sql">false</property>
+
+        <!--Second level cache configuration-->
+        <property name="hibernate.cache.use_query_cache">true</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.use_structured_entries">true</property>
+        <property name="hibernate.cache.region.factory_class">
+            org.hibernate.cache.jcache.JCacheRegionFactory
+        </property>
+        <property name="hibernate.javax.cache.provider">
+            org.ehcache.jsr107.EhcacheCachingProvider
+        </property>
+        <!-- hibernate.javax.cache.uri is defined in
+                  config/spring/api/core-hibernate.xml so that we can use
+                  property substitution. -->
+        <property name="javax.persistence.sharedCache.mode">ENABLE_SELECTIVE</property>
+
+        <!-- Entities to be loaded by hibernate -->
+        <mapping class="org.dspace.content.cis.Civilt"/>
+        <mapping class="org.dspace.content.cis.Civilta"/>
+        <mapping class="org.dspace.content.cis.CaseType"/>
+        <mapping class="org.dspace.content.cis.Connectedt"/>
+        <mapping class="org.dspace.content.cis.Courtt"/>
+        <mapping class="org.dspace.content.cis.DspaceToCisMapping"/>
+        <mapping class="org.dspace.content.cis.OrgNamet"/>
+        <mapping class="org.dspace.content.cis.SubjectMaster"/>
+        <mapping class="org.dspace.content.cis.SubnatureOnet"/>
+        <mapping class="org.dspace.content.cis.SubnatureThreeT"/>
+        <mapping class="org.dspace.content.cis.SubnatureTwoT"/>
+        <mapping class="org.dspace.content.cis.Extraadvt"/>
+        <mapping class="org.dspace.content.cis.Naturet"/>
+        <mapping class="org.dspace.content.cis.CriminalT"/>
+        <mapping class="org.dspace.content.cis.PoliceStnT"/>        
+
+    </session-factory>
+</hibernate-configuration>
+
