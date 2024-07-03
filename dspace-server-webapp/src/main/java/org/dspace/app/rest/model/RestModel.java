@@ -39,6 +39,25 @@ public interface RestModel extends Serializable {
     public static final String DSPACEEVENT = "dspaceevent";
     public static final String DOCUMENTTYPE = "documenttype";
     public static final String CISRESULT = "cisresult";
+
+    public static final String WORKFLOWPROCESS = "workflowprocesse";
+    public static final String WORKFLOWPROCESSREFERENCEDOC = "workflowprocessreferencedoc";
+    public static final String WORKFLOWPROCESSREFERENCEDOCVERSION = "workflowprocessreferencedocversion";
+
+
+    public static final String WORKFLOWPROCESSDEFINITION = "workflowprocessdefinition";
+
+    public static final String WORKFLOWPROCESSSENDERDIARY = "workflowprocesssenderdiarie";
+
+    public static final String LATTERCATOGORY = "lattercategorie";
+    public static final String WORKFLOWPROCESSMASTER = "workflowprocessmaster";
+    public static final String WORKFLOWPROCESSMASTERVALUE = "workflowprocessmastervalue";
+    public static final String WORKFLOWPROCESSHISTORY = "workflowprocesshistorie";
+    public static final String WORKFLOWPROCESSINWARDDETAIL = "workflowprocessinwarddetail";
+    public static final String WORKFLOWPROCESSDRAFTDETAIL = "workflowprocessdraftdetail";
+    public static final String WORKFLOWPROCESSCOMMENT = "workflowprocesscomment";
+    public static final String WORKFLOWPROCESSOUTWARDDETAIL = "workflowprocessoutwarddetail";
+
     public String getType();
 
     @JsonIgnore
