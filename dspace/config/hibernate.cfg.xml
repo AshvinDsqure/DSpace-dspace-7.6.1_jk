@@ -65,7 +65,25 @@
         <mapping class="org.dspace.content.MetadataValue"/>
         <mapping class="org.dspace.content.Site"/>
         <mapping class="org.dspace.content.WorkspaceItem"/>
+        <!-- add workflow process entity start-->
 
+        <mapping class="org.dspace.content.WorkflowProcess"/>
+        <mapping class="org.dspace.content.WorkflowProcessReferenceDoc"/>
+        <mapping class="org.dspace.content.WorkflowProcessReferenceDocVersion"/>
+        <mapping class="org.dspace.content.WorkflowProcessCorrespondence"/>
+        <mapping class="org.dspace.content.WorkflowProcessSenderDiary"/>
+        <mapping class="org.dspace.content.WorkFlowProcessMaster"/>
+        <mapping class="org.dspace.content.WorkFlowProcessHistory"/>
+        <mapping class="org.dspace.content.WorkFlowProcessInwardDetails"/>
+        <mapping class="org.dspace.content.WorkFlowProcessDraftDetails"/>
+        <mapping class="org.dspace.content.WorkFlowProcessComment"/>
+        <mapping class="org.dspace.content.WorkFlowProcessOutwardDetails"/>
+        <mapping class="org.dspace.content.WorkFlowProcessMasterValue"/>
+        <mapping class="org.dspace.content.WorkflowProcessDefinition"/>
+        <mapping class="org.dspace.content.WorkflowProcessEperson"/>
+        <mapping class="org.dspace.content.WorkflowProcessNote"/>
+        <mapping class="org.dspace.content.WorkflowProcessTemplate"/>
+        <!-- add workflow process entity end-->
         <mapping class="org.dspace.eperson.EPerson"/>
         <mapping class="org.dspace.eperson.Group"/>
         <mapping class="org.dspace.eperson.Group2GroupCache"/>
@@ -83,6 +101,8 @@
         <mapping class="org.dspace.versioning.VersionHistory"/>
 
         <mapping class="org.dspace.app.requestitem.RequestItem"/>
+
+
 
         <!--Configurable workflow services -->
         <mapping class="org.dspace.xmlworkflow.storedcomponents.ClaimedTask"/>

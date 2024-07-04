@@ -17,6 +17,8 @@
 
         <!--Debug property that can be used to display the sql-->
         <property name="show_sql">false</property>
+		<property name="format_sql">true</property>
+		<property name="use_sql_comments">true</property>
 
         <!--Second level cache configuration-->
         <property name="hibernate.cache.use_query_cache">true</property>
@@ -48,7 +50,16 @@
         <mapping class="org.dspace.content.cis.Extraadvt"/>
         <mapping class="org.dspace.content.cis.Naturet"/>
         <mapping class="org.dspace.content.cis.CriminalT"/>
-        <mapping class="org.dspace.content.cis.PoliceStnT"/>        
+        <mapping class="org.dspace.content.cis.PoliceStnT"/>      
+        <mapping class="org.dspace.content.cis.ExtraActT"/>  
+        <mapping class="org.dspace.content.cis.Act"/>   	
+        <mapping class="org.dspace.content.cis.Civaddresst"/>   	
+		<mapping class="org.dspace.content.cis.DistrictT"/> 
+  		<mapping class="org.dspace.content.cis.JudgeNamet"/> 
+  	
+		
+		
+		
 
     </session-factory>
 </hibernate-configuration>

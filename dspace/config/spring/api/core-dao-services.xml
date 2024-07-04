@@ -25,6 +25,27 @@
     <bean class="org.dspace.content.dao.impl.ItemDAOImpl"/>
     <bean class="org.dspace.content.dao.impl.MetadataFieldDAOImpl"/>
     <bean class="org.dspace.content.dao.impl.PdfAnnotationDAOImpl"/>
+	
+	 <!-- add workflow process entity start-->
+	 
+    <bean class="org.dspace.content.dao.impl.WorkflowProcessDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkflowProcessDefinitionDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkflowProcessNoteDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkflowProcessReferenceDocDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkflowProcessReferenceDocVersionDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkflowProcessEpersonDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkflowProcessSenderDiaryDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkFlowProcessMasterDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkFlowProcessMasterValueDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkFlowProcessHistoryDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkFlowProcessInwardDetailsDAOImpl"/>
+	<bean class="org.dspace.content.dao.impl.WorkFlowProcessDraftDetailsDAOImpl"/>
+	<bean class="org.dspace.content.dao.impl.WorkFlowProcessCommentDAOImpl"/>
+    <bean class="org.dspace.content.dao.impl.WorkFlowProcessOutwardDetailsDAOImpl"/>
+	<bean class="org.dspace.content.dao.impl.WorkflowProcessTemplateDAOImpl"/>
+	 
+	  <!-- add workflow process entity end-->
+	
     <bean class="org.dspace.content.dao.impl.MetadataSchemaDAOImpl"/>
     <bean class="org.dspace.content.dao.impl.MetadataValueDAOImpl"/>
     <bean class="org.dspace.content.dao.impl.SiteDAOImpl"/>

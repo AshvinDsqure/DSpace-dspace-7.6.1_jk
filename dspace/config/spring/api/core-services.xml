@@ -59,7 +59,28 @@
     <bean class="org.dspace.content.RelationshipTypeServiceImpl"/>
     <bean class="org.dspace.content.RelationshipMetadataServiceImpl"/>
     <bean class="org.dspace.content.FeedbackServiceImpl"/>
-
+	
+	 <!-- add workflow process entity start-->
+	
+	 <bean class="org.dspace.content.WorkFlowProcessServiceImpl"/>
+    <bean class="org.dspace.content.WorkflowProcessSenderDiaryServiceImpl"/>
+    <bean class="org.dspace.content.WorkFlowProcessMasterServiceImpl"/>
+    <bean class="org.dspace.content.WorkFlowProcessMasterValueServiceImpl"/>
+    <bean class="org.dspace.content.WorkFlowProcessHistoryServiceImpl"/>
+    <bean class="org.dspace.content.WorkFlowProcessInwardDetailsServiceImpl"/>
+	<bean class="org.dspace.content.WorkFlowProcessDraftDetailsServiceImpl"/>
+	<bean class="org.dspace.content.WorkFlowProcessCommentServiceImpl"/>
+    <bean class="org.dspace.content.WorkFlowProcessOutwardDetailsServiceImpl"/>
+    <bean class="org.dspace.content.WorkflowProcessReferenceDocServiceImpl"/>
+    <bean class="org.dspace.content.WorkflowProcessReferenceDocVersionServiceImpl"/>
+	<bean class="org.dspace.content.WorkflowProcessEpersonServiceImpl"/>
+	<bean class="org.dspace.content.WorkflowProcessTemplateServiceImpl"/>
+	 <bean class="org.dspace.content.WorkflowProcessNoteServiceImpl"/>
+    <bean class="org.dspace.content.WorkflowProcessDefinitionServiceImpl"/>
+	
+	
+     <!-- add workflow process entity end-->
+	 
     <bean class="org.dspace.scripts.ProcessServiceImpl"/>
     <bean class="org.dspace.scripts.ScriptServiceImpl"/>
 
